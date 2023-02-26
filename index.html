@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Корзина</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card__info">
+          <img class="card__img" src="./assets/куртка.jpg" />
+          <div class="card__description">
+            <h2>Куртка Nike</h2>
+            <p>Цвет: черный</p>
+            <p>Размер: 46</p>
+            <p>Количество: 1</p>
+          </div>
+        </div>
+        <div class="price">
+          <p id="jacket" class="price__button" type="number">7000</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__info">
+          <img class="card__img" src="./assets/кроссовки.jpg" />
+          <div class="card__description">
+            <h2>Кроссовки Nike</h2>
+            <p>Цвет: белый</p>
+            <p>Размер: 39</p>
+            <p>Количество: 1</p>
+          </div>
+        </div>
+        <div class="price">
+          <p id="shoes" class="price__button" type="number">6500</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__info">
+          <img class="card__img" src="./assets/футболка.jpg" />
+          <div class="card__description">
+            <h2>Футболка Nike</h2>
+            <p>Цвет: белый</p>
+            <p>Размер: 44</p>
+            <p>Количество: 1</p>
+          </div>
+        </div>
+        <div class="price">
+          <p id="tshirt" class="price__button" type="number">4300</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__info">
+          <img class="card__img" src="./assets/шорты.jpg" />
+          <div class="card__description">
+            <h2>Шорты Nike</h2>
+            <p>Цвет: черный</p>
+            <p>Размер: 44</p>
+            <p>Количество: 1</p>
+          </div>
+        </div>
+        <div class="price">
+          <p id="shorts" class="price__button" type="number">2500</p>
+        </div>
+      </div>
+      <button onclick="calcDisc()" class="promo">Скидка 20%</button>
+      <div class="sum">
+        <p class="sum__text">Итого:</p>
+        <p id="result" class="sum__money"></p>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
